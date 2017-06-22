@@ -1,5 +1,5 @@
 ### 获取社区信息
-#### /site/info.json
+  * `/site/info.json`
 ```
 {
     "title": "V2EX",                    // 社区名称
@@ -10,7 +10,7 @@
 ```
 
 ### 获取社区状态
-#### /site/stats.json
+* `/site/stats.json`
 ```
 {
     "topic_max": 362572,  // 话题数量
@@ -18,30 +18,30 @@
 }
 ```
 ### 获取节点信息
-#### /nodes/show.json?id= （id参数必须）通过节点 id 获取信息
-#### /nodes/show.json?name= （name参数必须）通过节点名称获取信息
-#### /nodes/all.json 获取全部节点信息
+* `/nodes/show.json?id=` （id 参数必须）通过节点 id 获取信息
+* `/nodes/show.json?name=` （name 参数必须）通过节点名称获取信息
+* `/nodes/all.json` 获取全部节点信息
 ```
 {
-    "id": 1,  // 节点id
-    "name": "babel",  // 节点缩略名
-    "url": "http://www.v2ex.com/go/babel",  // 节点URL
-    "title": "Project Babel",  // 节点名称
-    "title_alternative": "Project Babel",  // 备选节点名称
-    "topics": 1119,  // 主题数量
-    "stars": 352,  // 该节点关注人数
-    "header": "Project Babel - 帮助你在云平台上搭建自己的社区",  // 节点头部信息
-    "footer": "Project Babel 是用 Python 语言写成的，运行于 Google App Engine 云计算平台上的社区软件。",  // 节点脚部信息
-    "created": 1272206882,  // 节点创建时间
-    "avatar_mini": "//v2ex.assets.uxengine.net/navatar/c4ca/4238/1_mini.png?m=1494924246",  // 节点的小图标
-    "avatar_normal": "//v2ex.assets.uxengine.net/navatar/c4ca/4238/1_normal.png?m=1494924246",  // 节点的标准图标
-    "avatar_large": "//v2ex.assets.uxengine.net/navatar/c4ca/4238/1_large.png?m=1494924246"  // 节点的大图标
+    "id": 1,
+    "name": "babel",
+    "url": "http://www.v2ex.com/go/babel",
+    "title": "Project Babel",
+    "title_alternative": "Project Babel",
+    "topics": 1119,
+    "stars": 352,
+    "header": "Project Babel - 帮助你在云平台上搭建自己的社区",
+    "footer": "Project Babel 是用 Python 语言写成的，运行于 Google App Engine 云计算平台上的社区软件。",
+    "created": 1272206882,
+    "avatar_mini": "//v2ex.assets.uxengine.net/navatar/c4ca/4238/1_mini.png?m=1494924246",
+    "avatar_normal": "//v2ex.assets.uxengine.net/navatar/c4ca/4238/1_normal.png?m=1494924246",
+    "avatar_large": "//v2ex.assets.uxengine.net/navatar/c4ca/4238/1_large.png?m=1494924246"
 }
 ```
 
 ### 获取用户信息
-#### /members/show.json?id= （id参数必须）通过用户 id 获取用户信息
-#### /members/show.json?username= （username参数必须）通过用户名称获取用户信息
+* `/members/show.json?id=` （id 参数必须）通过用户 id 获取用户信息
+* `/members/show.json?username=` （username 参数必须）通过用户名称获取用户信息
 ```
 // 得到用户的基本信息
 {
@@ -65,11 +65,11 @@
 ```
 
 ### 获取主题信息
-#### /topics/hot.json 获取社区每天最热的10个主题
-#### /topics/show.json?id= （id参数必须）通过主题 id 获取主题的信息
-#### /topics/show.json?username= （username参数必须） 通过用户名称获取用户的主题列表
-#### /topics/show.json?node_name= （node_name参数必须） 通过节点名称获取该节点下的主题列表
-#### /topics/show.json?node_id= （id参数必须） 通过节点 id 获取该节点下的主题列表
+* `/topics/hot.json` 获取社区每天最热的10个主题
+* `/topics/show.json?id=` （id 参数必须）通过主题 id 获取主题的信息
+* `/topics/show.json?username=` （username 参数必须） 通过用户名称获取用户的主题列表
+* `/topics/show.json?node_name=` （node_name 参数必须） 通过节点名称获取该节点下的主题列表
+* `/topics/show.json?node_id=` （id 参数必须） 通过节点 id 获取该节点下的主题列表
 ```
 {
         // 主题的基本信息
@@ -107,7 +107,7 @@
 ```
 
 ### 获取主题回复
-#### /replies/show.json?topic_id= （topic_id参数必须） 通过主题 id 获取该主题下的所有回复
+* `/replies/show.json?topic_id=` （topic_id 参数必须） 通过主题 id 获取该主题下的所有回复
 ```
 {
     // 主题回复的基本信息
