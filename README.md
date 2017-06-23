@@ -1,4 +1,6 @@
 ## V2EX-API
+请求 API 的 URL 为 `https://www.v2ex.com/api/`
+
 默认情况下，请求方式均为GET请求，每个 IP 每小时可以发起的 API 请求数被限制在 120 次
 ### 获取社区信息
   * `/site/info.json`
